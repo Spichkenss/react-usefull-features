@@ -1,0 +1,41 @@
+.btn {
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+
+    &.ghost {
+        background: transparent;
+        color: #0083fd;
+    }
+
+    &.outlined {
+        background: transparent;
+        color: #0083fd;
+        outline: 1px solid #0083fd;
+    }
+
+    &.primary {
+        background: #0083fd;
+        color: white;
+    }
+
+    &.secondary {
+        background: #6183a242;
+        color: #0083fd;
+    }
+
+    &.small {
+        padding: 8px 10px;
+        border-radius: 6px;
+    }
+
+    &.medium {
+        padding: 10px 12px;
+        border-radius: 8px;
+    }
+
+    &.large {
+        padding: 16px 20px;
+        border-radius: 10px;
+    }
+}
