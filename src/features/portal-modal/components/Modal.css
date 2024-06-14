@@ -1,0 +1,30 @@
+.modal {
+    display: none;
+
+    &[data-state=opened] {
+        display: initial;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: var(999);
+    }
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0 0 0 / 60%);
+}
+
+.content {
+    background: white;
+    padding: 1em;
+    max-width: 60vw;
+    word-wrap: anywhere;
+    color: black;
+}
