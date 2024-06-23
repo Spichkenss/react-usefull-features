@@ -7,7 +7,7 @@ interface UseKeyDownProps {
   callback: () => void
 }
 
-export const useKeyDown: FC<UseKeyDownProps> = ({key, callback, condition}) => {
+export const useKeyDown = ({key, callback, condition}: UseKeyDownProps) => {
 
   const onKeyPress = useCallback((event: KeyboardEvent) => {
     if (!condition) return;
